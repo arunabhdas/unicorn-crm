@@ -1,4 +1,5 @@
 # CloudCnctrCRM
+CloudCnctr is a blockchain powered DeFi platform that connects assets in the digital world with assets in the physical world
 Cnctr-Android is a cloud CRM for enterprise business analytics
 
 ### Screenshots

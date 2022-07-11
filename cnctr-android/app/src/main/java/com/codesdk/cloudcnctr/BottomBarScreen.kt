@@ -50,7 +50,7 @@ sealed class BottomBarScreen(
 
     object TabFourScreen: BottomBarScreen(
         route = "four",
-        title = "Four",
+        title = "Assets",
         iconId = R.drawable.ic_bubble
     )
 

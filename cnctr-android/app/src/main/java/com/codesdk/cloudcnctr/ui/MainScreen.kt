@@ -35,7 +35,9 @@ fun BottomBar(navController: NavHostController) {
     val screens = listOf(
         BottomBarScreen.TabOneScreen,
         BottomBarScreen.TabTwoScreen,
-        BottomBarScreen.TabThreeScreen
+        BottomBarScreen.TabThreeScreen,
+        BottomBarScreen.TabFourScreen
+
     )
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()

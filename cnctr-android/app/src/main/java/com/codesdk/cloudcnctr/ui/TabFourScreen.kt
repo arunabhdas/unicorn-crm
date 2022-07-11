@@ -11,22 +11,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.codesdk.cloudcnctr.ui.theme.PrimaryColor
+import com.codesdk.cloudcnctr.ui.theme.DeepBlue
 
 /**
- * Created by Das on 2022-07-08.
+ * Created by Das on 2022-07-11.
  */
 
 @Composable
-fun TabTwoScreen() {
+fun TabFourScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(PrimaryColor),
+            .background(DeepBlue),
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = "Profile",
+            text = "Settings",
             fontSize = MaterialTheme.typography.h3.fontSize,
             fontWeight = FontWeight.Bold,
             color = Color.White
@@ -36,6 +36,6 @@ fun TabTwoScreen() {
 
 @Composable
 @Preview
-fun TabTwoScreenPreview() {
-    TabTwoScreen()
+fun TabFourScreenPreview() {
+    TabFourScreen()
 }
