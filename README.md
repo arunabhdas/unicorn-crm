@@ -1,4 +1,5 @@
-# CloudCnctr
+# CloudCnctrCRM
+Cnctr-Android is a cloud CRM for enterprise business analytics
 
 ### Screenshots
 
