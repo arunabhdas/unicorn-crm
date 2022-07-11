@@ -8,9 +8,9 @@ Cnctr-Android is a cloud CRM for enterprise business analytics
 
 * Presentation (UI) layer - Views, ViewModels
 
-Domain (UI) layer - Models, Repository Interfaces, Business logic (Use-cases)
+* Domain (UI) layer - Models, Repository Interfaces, Business logic (Use-cases)
 
-Data layer - Data, API Interfaces, DB, Repository Implementations
+* Data layer - Data, API Interfaces, DB, Repository Implementations
 
 ### API Endpoints
 https://api.coinpaprika.com/v1/coins
