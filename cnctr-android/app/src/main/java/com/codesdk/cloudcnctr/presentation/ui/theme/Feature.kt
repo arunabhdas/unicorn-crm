@@ -1,4 +1,4 @@
-package com.codesdk.cloudcnctr
+package com.codesdk.cloudcnctr.presentation.ui.theme
 
 import androidx.annotation.DrawableRes
 import androidx.compose.ui.graphics.Color

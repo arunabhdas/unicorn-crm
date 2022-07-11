@@ -1,19 +1,16 @@
-package com.codesdk.cloudcnctr.ui
+package com.codesdk.cloudcnctr.presentation.ui
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.painterResource
-import androidx.core.graphics.drawable.toDrawable
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.codesdk.cloudcnctr.ui.theme.SecondaryColor
-import com.codesdk.cloudcnctr.BottomBarScreen
-import com.codesdk.cloudcnctr.R
+import com.codesdk.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
 
 /**
  * Created by Das on 2022-07-08.

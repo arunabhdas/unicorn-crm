@@ -1,4 +1,4 @@
-package com.codesdk.cloudcnctr
+package com.codesdk.cloudcnctr.presentation.ui.bottombar
 
 import androidx.annotation.DrawableRes
 

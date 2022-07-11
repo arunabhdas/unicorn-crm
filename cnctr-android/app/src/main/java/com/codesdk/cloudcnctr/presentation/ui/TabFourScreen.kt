@@ -1,4 +1,4 @@
-package com.codesdk.cloudcnctr.ui
+package com.codesdk.cloudcnctr.presentation.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -11,15 +11,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.codesdk.cloudcnctr.ui.theme.DeepBlue
-import com.codesdk.cloudcnctr.ui.theme.QuadColor
-import com.codesdk.cloudcnctr.BottomBarScreen
+import com.codesdk.cloudcnctr.presentation.ui.theme.DeepBlue
 
 /**
- * Created by Das on 2022-07-08.
+ * Created by Das on 2022-07-11.
  */
+
 @Composable
-fun TabThreeScreen() {
+fun TabFourScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -37,6 +36,6 @@ fun TabThreeScreen() {
 
 @Composable
 @Preview
-fun TabThreeScreenPreview() {
-    TabThreeScreen()
+fun TabFourScreenPreview() {
+    TabFourScreen()
 }

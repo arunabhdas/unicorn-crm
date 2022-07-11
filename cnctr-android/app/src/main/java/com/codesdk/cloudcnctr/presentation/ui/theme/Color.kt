@@ -1,4 +1,4 @@
-package com.codesdk.cloudcnctr.ui.theme
+package com.codesdk.cloudcnctr.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

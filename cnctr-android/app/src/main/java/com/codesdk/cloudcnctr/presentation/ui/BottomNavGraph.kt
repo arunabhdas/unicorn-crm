@@ -1,11 +1,11 @@
-package com.codesdk.cloudcnctr.ui
+package com.codesdk.cloudcnctr.presentation.ui
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.codesdk.cloudcnctr.BottomBarScreen
+import com.codesdk.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
 
 /**
  * Created by Das on 2022-07-08.

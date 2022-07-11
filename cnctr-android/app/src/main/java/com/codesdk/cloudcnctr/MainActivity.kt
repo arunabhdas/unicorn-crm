@@ -9,9 +9,9 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.codesdk.cloudcnctr.ui.theme.CloudCnctrTheme
-import com.codesdk.cloudcnctr.ui.MainScreen
-import com.codesdk.cloudcnctr.ui.TabOneScreen
+import com.codesdk.cloudcnctr.presentation.ui.theme.CloudCnctrTheme
+import com.codesdk.cloudcnctr.presentation.ui.MainScreen
+import com.codesdk.cloudcnctr.presentation.ui.TabOneScreen
 
 class MainActivity : ComponentActivity() {
     @ExperimentalFoundationApi

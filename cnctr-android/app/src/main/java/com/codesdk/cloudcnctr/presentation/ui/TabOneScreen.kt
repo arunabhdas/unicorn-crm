@@ -1,4 +1,4 @@
-package com.codesdk.cloudcnctr.ui
+package com.codesdk.cloudcnctr.presentation.ui
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -25,12 +25,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.codesdk.cloudcnctr.BottomMenuContent
-import com.codesdk.cloudcnctr.Feature
+import com.codesdk.cloudcnctr.presentation.ui.theme.Feature
 import com.codesdk.cloudcnctr.R
+import com.codesdk.cloudcnctr.presentation.ui.theme.*
 import com.codesdk.cloudcnctr.standardQuadFromTo
-import com.codesdk.cloudcnctr.ui.*
-import com.codesdk.cloudcnctr.ui.theme.*
 
 /**
  * Created by Das on 2022-07-08.
