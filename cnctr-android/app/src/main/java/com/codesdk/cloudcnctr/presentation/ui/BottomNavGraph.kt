@@ -29,5 +29,9 @@ fun BottomNavGraph(navController: NavHostController) {
             TabThreeScreen()
         }
 
+        composable(route = BottomBarScreen.TabFourScreen.route) {
+            TabFourScreen()
+        }
+
     }
 }
