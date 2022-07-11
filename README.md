@@ -12,6 +12,11 @@ Domain (UI) layer - Models, Repository Interfaces, Business logic (Use-cases)
 
 Data layer - Data, API Interfaces, DB, Repository Implementations
 
+### API Endpoints
+https://api.coinpaprika.com/v1/coins
+
+https://api.coinpaprika.com/v1/coins/btc-bitcoin
+
 ### Screenshots
 
 ![Screenshot 2](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_2.png)
