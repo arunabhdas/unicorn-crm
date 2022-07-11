@@ -30,7 +30,7 @@ fun BottomNavGraph(navController: NavHostController) {
         }
 
         composable(route = BottomBarScreen.TabFourScreen.route) {
-            TabFourScreen()
+            // TODO-FIXME TabFourScreen()
         }
 
     }
