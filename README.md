@@ -2,4 +2,4 @@
 
 ### Screenshots
 
-![Screenshot 1](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_1.png)
+![Screenshot 2](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_2.png)
