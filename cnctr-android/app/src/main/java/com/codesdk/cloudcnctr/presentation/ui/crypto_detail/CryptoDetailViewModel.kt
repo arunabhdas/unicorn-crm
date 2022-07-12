@@ -11,6 +11,7 @@ import com.codesdk.cloudcnctr.domain.model.Crypto
 import com.codesdk.cloudcnctr.domain.model.CryptoDetail
 import com.codesdk.cloudcnctr.domain.use_case.get_crypto.GetCryptoUseCase
 import com.codesdk.cloudcnctr.domain.use_case.get_cryptos.GetCryptosUseCase
+import com.codesdk.cloudcnctr.presentation.ui.crypto_detail.CryptoDetailState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -53,8 +54,3 @@ class CryptoDetailViewModel @Inject constructor(
     }
 }
 
-data class CryptoDetailState(
-    val isLoading: Boolean = false,
-    val crypto: CryptoDetail? = null,
-    val error: String = ""
-)

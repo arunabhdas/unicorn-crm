@@ -8,6 +8,7 @@ import com.codesdk.cloudcnctr.common.Resource
 import com.codesdk.cloudcnctr.domain.model.Crypto
 import com.codesdk.cloudcnctr.domain.use_case.get_crypto.GetCryptoUseCase
 import com.codesdk.cloudcnctr.domain.use_case.get_cryptos.GetCryptosUseCase
+import com.codesdk.cloudcnctr.presentation.ui.crypto_list.CryptoListState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -48,8 +49,3 @@ class CryptoListViewModel @Inject constructor(
     }
 }
 
-data class CryptoListState(
-    val isLoading: Boolean = false,
-    val cryptos: List<Crypto> = emptyList(),
-    val error: String = ""
-)
