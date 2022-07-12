@@ -1,6 +1,5 @@
 package com.codesdk.cloudcnctr.presentation.ui
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -22,7 +21,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.codesdk.cloudcnctr.presentation.ui.crypto_list.components.CryptoListViewModel
-import com.codesdk.cloudcnctr.presentation.ui.cryptos_list.components.CryptoListItem
+import com.codesdk.cloudcnctr.presentation.ui.crypto_list.components.CryptoListItem
 import com.codesdk.cloudcnctr.presentation.ui.theme.DeepBlue
 
 /**
