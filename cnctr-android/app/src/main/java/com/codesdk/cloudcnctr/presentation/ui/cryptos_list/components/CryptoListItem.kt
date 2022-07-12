@@ -16,6 +16,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.codesdk.cloudcnctr.common.Constants
 import com.codesdk.cloudcnctr.domain.model.Crypto
 
 /**
@@ -40,7 +41,7 @@ fun CryptoListItem(
         )
 
         Text(
-            text = if (crypto.isActive) "active" else "inactive",
+            text = if (crypto.isActive) Constants.STATUS_ACTIVE else Constants.STATUS_INACTIVE,
             color = if (crypto.isActive) Color.Green else Color.Red,
             fontStyle = FontStyle.Italic,
             textAlign = TextAlign.End,

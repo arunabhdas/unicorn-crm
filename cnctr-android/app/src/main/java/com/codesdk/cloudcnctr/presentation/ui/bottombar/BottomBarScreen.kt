@@ -44,7 +44,7 @@ sealed class BottomBarScreen(
         iconId = R.drawable.ic_bubble
     )
 
-    object TabFourScreen: BottomBarScreen(
+    object CryptoListScreen: BottomBarScreen(
         route = "four",
         title = "Assets",
         iconId = R.drawable.ic_bubble

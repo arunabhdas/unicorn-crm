@@ -29,8 +29,8 @@ fun BottomNavGraph(navController: NavHostController) {
             TabThreeScreen()
         }
 
-        composable(route = BottomBarScreen.TabFourScreen.route) {
-            // TODO-FIXME TabFourScreen()
+        composable(route = BottomBarScreen.CryptoListScreen.route) {
+            // TODO-FIXME CryptoListScreen()
         }
 
     }
