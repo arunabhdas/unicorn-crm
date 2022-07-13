@@ -29,7 +29,7 @@ import com.codesdk.cloudcnctr.presentation.ui.theme.DeepBlue
  */
 @Composable
 fun CryptoListScreen(
-    navController: NavController,
+    // TODO-FIXME navController: NavController,
     viewModel: CryptoListViewModel = hiltViewModel()
 ) {
     val state = viewModel.state.value
@@ -43,9 +43,11 @@ fun CryptoListScreen(
                 CryptoListItem(
                     crypto = crypto,
                     onItemClick = {
+                        /* TODO-FIXME
                         navController.navigate(
                             Screen.CryptoDetailScreen.route + "/${crypto.id}"
                         )
+                        */
                 })
             }
         }
@@ -67,19 +69,7 @@ fun CryptoListScreen(
             )
         }
     }
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(DeepBlue),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = "Assets",
-            fontSize = MaterialTheme.typography.h3.fontSize,
-            fontWeight = FontWeight.Bold,
-            color = Color.White
-        )
-    }
+
 }
 
 @Composable

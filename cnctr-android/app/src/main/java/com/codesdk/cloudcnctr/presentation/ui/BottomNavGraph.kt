@@ -30,7 +30,8 @@ fun BottomNavGraph(navController: NavHostController) {
         }
 
         composable(route = BottomBarScreen.CryptoListScreen.route) {
-            CryptoListScreen(navController)
+            // TODO-FIXME CryptoListScreen(navController)
+            CryptoListScreen()
         }
 
     }

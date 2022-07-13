@@ -14,7 +14,9 @@ import androidx.navigation.compose.rememberNavController
 import com.codesdk.cloudcnctr.presentation.ui.theme.CloudCnctrTheme
 import com.codesdk.cloudcnctr.presentation.ui.MainScreen
 import com.codesdk.cloudcnctr.presentation.ui.TabOneScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @ExperimentalFoundationApi
     override fun onCreate(savedInstanceState: Bundle?) {
