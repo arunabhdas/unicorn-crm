@@ -17,6 +17,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.codesdk.cloudcnctr.common.Constants
 import com.codesdk.cloudcnctr.domain.model.Crypto
+import com.codesdk.cloudcnctr.presentation.ui.theme.LightGreen1
+import com.codesdk.cloudcnctr.presentation.ui.theme.LightRed
+import com.codesdk.cloudcnctr.presentation.ui.theme.SecondaryColor
 
 /**
  * Created by Das on 2022-07-11.
@@ -35,13 +38,13 @@ fun CryptoListItem(
     ) {
         Text(
             text = "${crypto.rank}. ${crypto.name} (${crypto.symbol}",
-            style = MaterialTheme.typography.body1,
+            style = MaterialTheme.typography.h2,
             overflow = TextOverflow.Ellipsis
         )
 
         Text(
             text = if (crypto.isActive) Constants.STATUS_ACTIVE else Constants.STATUS_INACTIVE,
-            color = if (crypto.isActive) Color.Green else Color.Red,
+            color = if (crypto.isActive) Color.Green else LightRed,
             fontStyle = FontStyle.Italic,
             textAlign = TextAlign.End,
             style = MaterialTheme.typography.body2,

@@ -26,6 +26,8 @@ import com.codesdk.cloudcnctr.presentation.ui.crypto_list.components.CryptoDetai
 import com.codesdk.cloudcnctr.presentation.ui.crypto_list.components.CryptoListViewModel
 import com.codesdk.cloudcnctr.presentation.ui.crypto_list.components.CryptoListItem
 import com.codesdk.cloudcnctr.presentation.ui.theme.DeepBlue
+import com.codesdk.cloudcnctr.presentation.ui.theme.LightGreen1
+import com.codesdk.cloudcnctr.presentation.ui.theme.LightRed
 import com.google.accompanist.flowlayout.FlowRow
 
 /**
@@ -60,7 +62,7 @@ fun CryptoDetailScreen(
 
                         Text(
                             text = if (crypto.isActive) Constants.STATUS_ACTIVE else Constants.STATUS_INACTIVE,
-                            color = if (crypto.isActive) Color.Green else Color.Red,
+                            color = if (crypto.isActive) LightGreen1 else LightRed,
                             fontStyle = FontStyle.Italic,
                             textAlign = TextAlign.End,
                             modifier = Modifier
