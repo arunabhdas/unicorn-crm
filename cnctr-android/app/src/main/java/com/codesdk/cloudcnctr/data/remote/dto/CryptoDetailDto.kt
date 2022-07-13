@@ -36,7 +36,7 @@ data class CryptoDetailDto(
     val startedAt: String,
     val symbol: String,
     val tags: List<Tag>,
-    val team: List<TeamMember>,
+    val team: List<MoreInfoItemMember>,
     val type: String,
     val whitepaper: Whitepaper
 )

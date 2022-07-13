@@ -1,6 +1,6 @@
 package com.codesdk.cloudcnctr.data.remote.dto
 
-data class TeamMember(
+data class MoreInfoItemMember(
     val id: String,
     val name: String,
     val position: String

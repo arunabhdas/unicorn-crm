@@ -1,6 +1,6 @@
 package com.codesdk.cloudcnctr.domain.model
 
-import com.codesdk.cloudcnctr.data.remote.dto.TeamMember
+import com.codesdk.cloudcnctr.data.remote.dto.MoreInfoItemMember
 
 /**
  * Created by Das on 2022-07-11.
@@ -13,5 +13,5 @@ data class CryptoDetail(
     val rank: Int,
     val isActive: Boolean,
     val tags: List<String>,
-    val team: List<TeamMember>
+    val team: List<MoreInfoItemMember>
 )

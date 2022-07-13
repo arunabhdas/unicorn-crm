@@ -3,12 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/java/com/codesdk/cloudcnctr/presentation/ui/TabOneScreen.kt" value="0.1" />
-        <entry key="app/src/main/java/com/codesdk/cloudcnctr/presentation/ui/TabThreeScreen.kt" value="0.1" />
-        <entry key="app/src/main/java/com/codesdk/cloudcnctr/ui/HomeScreen.kt" value="0.1" />
-        <entry key="app/src/main/java/com/codesdk/cloudcnctr/ui/TabOneScreen.kt" value="0.1" />
-        <entry key="app/src/main/java/com/codesdk/cloudcnctr/ui/TabThreeScreen.kt" value="0.1" />
-        <entry key="app/src/main/java/com/codesdk/cloudcnctr/ui/TabTwoScreen.kt" value="0.1" />
         <entry key="app/src/main/java/com/plcoding/cloudcnctr/ui/TabThreeScreen.kt" value="0.2657407407407407" />
         <entry key="app/src/main/java/com/plcoding/cloudcnctr/ui/TabTwoScreen.kt" value="0.2657407407407407" />
       </map>
