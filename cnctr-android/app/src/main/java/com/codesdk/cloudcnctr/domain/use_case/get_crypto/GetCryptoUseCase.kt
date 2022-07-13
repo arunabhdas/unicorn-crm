@@ -20,14 +20,15 @@ class GetCryptoUseCase @Inject constructor(
 ) {
     operator fun invoke(coinId: String): Flow<Resource<CryptoDetail>> = flow {
         try {
-            emit(Resource.Loading<CryptoDetail>())
+            emit(Resource.Loading())
             val crypto = repository.getCryptoById(coinId).toCryptoDetail()
-            emit(Resource.Success<CryptoDetail>(crypto))
+            android.util.Log.d("TODO-FIXME", "crypto --" + coinId)
+            emit(Resource.Success(crypto))
 
         } catch(e: HttpException) {
-            emit(Resource.Error<CryptoDetail>(e.localizedMessage ?: "An unexpected error occurred"))
+            emit(Resource.Error(e.localizedMessage ?: "An unexpected error occurred"))
         } catch(e: IOException) {
-            emit(Resource.Error<CryptoDetail>("Couldn't reach server. Check internet connection"))
+            emit(Resource.Error("Couldn't reach server. Check internet connection"))
         }
     }
 

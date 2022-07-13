@@ -37,16 +37,19 @@ class CryptoDetailViewModel @Inject constructor(
         getCryptoUseCase(coinId).onEach { result ->
             when (result) {
                 is Resource.Success -> {
+                    android.util.Log.d("TODO-FIXME", "CryptoDetailViewModel success")
                     _state.value = CryptoDetailState(crypto = result.data)
                 }
 
                 is Resource.Error -> {
+                    android.util.Log.d("TODO-FIXME", "CryptoDetailViewModel error")
                     _state.value = CryptoDetailState(
                         error = result.message ?: "Unexpected error"
                     )
                 }
 
                 is Resource.Loading -> {
+                    android.util.Log.d("TODO-FIXME", "CryptoDetailViewModel loading")
                     _state.value = CryptoDetailState(isLoading = true)
                 }
             }

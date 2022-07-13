@@ -44,7 +44,7 @@ fun CryptoListScreen(
                     crypto = crypto,
                     onItemClick = {
                         navController.navigate(
-                            Screen.CryptoDetailScreen.route + "/${crypto.id}"
+                            GraphScreen.CryptoDetailScreen.route + "/${crypto.id}"
                         )
                 })
             }

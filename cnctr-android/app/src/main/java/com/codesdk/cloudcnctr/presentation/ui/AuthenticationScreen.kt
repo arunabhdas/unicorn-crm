@@ -8,7 +8,6 @@ import androidx.compose.material.TextField
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
@@ -17,7 +16,7 @@ import androidx.navigation.NavController
  */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun LandingScreen(navController: NavController) {
+fun AuthenticationScreen(navController: NavController) {
     var text by remember {
         mutableStateOf("")
     }
@@ -39,11 +38,12 @@ fun LandingScreen(navController: NavController) {
         Button(
             onClick = {
                 // TODO-FIXME navController.navigate(Screen.DetailScreen.withArgs(text))
-                navController.navigate(Screen.MainScreen.route)
+                navController.navigate(GraphScreen.MainScreen.route)
             },
             modifier = Modifier.align(Alignment.End)
         ) {
             Text(text = "GetStarted")
         }
+        Spacer(modifier = Modifier.height(8.dp))
     }
 }

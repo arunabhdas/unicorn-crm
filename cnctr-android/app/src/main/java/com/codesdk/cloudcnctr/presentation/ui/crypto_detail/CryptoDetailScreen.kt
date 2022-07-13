@@ -35,9 +35,11 @@ import com.google.accompanist.flowlayout.FlowRow
  */
 @Composable
 fun CryptoDetailScreen(
+    name: String?,
     viewModel: CryptoDetailViewModel = hiltViewModel()
 ) {
     val state = viewModel.state.value
+    android.util.Log.d("TODO-FIXME", state.toString())
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -135,23 +137,10 @@ fun CryptoDetailScreen(
             )
         }
     }
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(DeepBlue),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = "Assets",
-            fontSize = MaterialTheme.typography.h3.fontSize,
-            fontWeight = FontWeight.Bold,
-            color = Color.White
-        )
-    }
 }
 
 @Composable
 @Preview
 fun CryptoDetailScreenPreview() {
-    // TODO-FIXME-x86 CryptoListScreen()
+    CryptoDetailScreen(name = "detail_screen")
 }

@@ -3,8 +3,11 @@ package com.codesdk.cloudcnctr.presentation.ui
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.navArgument
+import com.codesdk.cloudcnctr.common.Constants
 import com.codesdk.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
 
 /**
@@ -12,7 +15,9 @@ import com.codesdk.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
  */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun BottomNavGraph(navController: NavHostController) {
+fun BottomNavGraph(
+    navController: NavHostController
+) {
     NavHost(
         navController = navController,
         startDestination = BottomBarScreen.TabOneScreen.route
@@ -33,8 +38,24 @@ fun BottomNavGraph(navController: NavHostController) {
             CryptoListScreen(navController)
         }
 
+        /* TODO-FIXME
         composable(route = BottomBarScreen.CryptoDetailScreen.route) {
             CryptoDetailScreen()
+        }
+        */
+        composable(
+            route = GraphScreen.CryptoDetailScreen.route + "/{arg_name}",
+            arguments = listOf(
+                navArgument(Constants.ARG_NAME) {
+                    type = NavType.StringType
+                    defaultValue = "CloudCnctr"
+                    nullable = true
+                }
+            )
+        ) { entry ->
+            CryptoDetailScreen(
+                name = entry.arguments?.getString(Constants.ARG_NAME)
+            )
         }
     }
 }
