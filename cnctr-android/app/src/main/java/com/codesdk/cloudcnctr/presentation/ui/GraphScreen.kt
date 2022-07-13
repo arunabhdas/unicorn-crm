@@ -4,6 +4,7 @@ package com.codesdk.cloudcnctr.presentation.ui
  * Created by Das on 2022-07-11.
  */
 sealed class GraphScreen(val route: String) {
+    object RootGraphScreen: GraphScreen("root_graph")
     object AuthenticationScreen: GraphScreen("authentication_screen")
     object DetailScreen: GraphScreen("detail_screen")
     object MainScreen: GraphScreen("main_screen")
