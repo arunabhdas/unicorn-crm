@@ -50,7 +50,11 @@ fun Navigation() {
             )
         ) { entry ->
             // TODO-FIXME DetailScreen(name = entry.arguments?.getString(Constants.ARG_NAME))
-            MainScreen(name = entry.arguments?.getString(Constants.ARG_NAME))
+            MainScreen(name = entry.arguments?.getString(Constants.ARG_NAME), navController)
+        }
+
+        composable(route = Screen.MainScreen.route) {
+            MainScreen(name = "main_screen", navController = navController)
         }
     }
 }
