@@ -22,7 +22,7 @@ class GetCryptoUseCase @Inject constructor(
         try {
             emit(Resource.Loading())
             val crypto = repository.getCryptoById(coinId).toCryptoDetail()
-            android.util.Log.d("TODO-FIXME", "crypto --" + coinId)
+            android.util.Log.d("TODO-FIXME", "GetCryptoUseCase--crypto --" + coinId)
             emit(Resource.Success(crypto))
 
         } catch(e: HttpException) {

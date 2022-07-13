@@ -16,6 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.codesdk.cloudcnctr.presentation.ui.theme.DeepBlue
 import com.codesdk.cloudcnctr.presentation.ui.theme.PrimaryColor
 
 /**
@@ -30,7 +31,7 @@ fun AuthenticationScreen(navController: NavController) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(PrimaryColor),
+            .background(DeepBlue),
         contentAlignment = Alignment.Center
     ) {
         Column(
@@ -54,6 +55,7 @@ fun AuthenticationScreen(navController: NavController) {
                     navController.navigate(GraphScreen.MainScreen.route)
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally)
+                    .background(PrimaryColor)
             ) {
                 Text(text = "GetStarted")
             }

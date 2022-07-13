@@ -40,6 +40,7 @@ fun CryptoDetailScreen(
 ) {
     val state = viewModel.state.value
     android.util.Log.d("TODO-FIXME", state.toString())
+    android.util.Log.d("TODO-FIXME", "--CryptoDetailsScreen--name--" + name)
     android.util.Log.d("TODO-FIXME", "--CryptoDetailScreen--")
     Box(
         modifier = Modifier
@@ -65,45 +66,55 @@ fun CryptoDetailScreen(
 
                         Text(
                             text = if (crypto.isActive) Constants.STATUS_ACTIVE else Constants.STATUS_INACTIVE,
-                            color = if (crypto.isActive) LightGreen1 else LightRed,
+                            color = if (crypto.isActive) Color.Green else Color.Red,
                             fontStyle = FontStyle.Italic,
                             textAlign = TextAlign.End,
                             modifier = Modifier
                                 .align(CenterVertically)
                                 .weight(2f)
                         )
-                        Spacer(modifier = Modifier.height(15.dp))
+                        Column(
 
-                        Text(
-                            text = crypto.description,
-                            style = MaterialTheme.typography.body2
-                        )
-
-                        Spacer(modifier = Modifier.height(15.dp))
-
-                       Text(
-                           text = "Tags",
-                           style = MaterialTheme.typography.h3
-                       )
-
-                        Spacer(modifier = Modifier.height(15.dp))
-
-                        FlowRow(
-                            mainAxisSpacing = 10.dp,
-                            crossAxisSpacing = 10.dp,
-                            modifier = Modifier.fillMaxWidth()
                         ) {
-                            crypto.tags.forEach { tag ->
-                                CryptoTag(tag = tag)
-                            }
-                        }
-                        Spacer(modifier = Modifier.height(15.dp))
+                            Text(
+                                text = crypto.name,
+                                style = MaterialTheme.typography.h2
+                            )
 
-                        Text(
-                            text = "Members",
-                            style = MaterialTheme.typography.h3
-                        )
-                        Spacer(modifier = Modifier.height(15.dp))
+                            Spacer(modifier = Modifier.height(15.dp))
+
+                            Text(
+                                text = crypto.description,
+                                style = MaterialTheme.typography.h2
+                            )
+
+                            Spacer(modifier = Modifier.height(15.dp))
+
+                            Text(
+                                text = "Tags",
+                                style = MaterialTheme.typography.h3
+                            )
+
+                            Spacer(modifier = Modifier.height(15.dp))
+
+                            FlowRow(
+                                mainAxisSpacing = 10.dp,
+                                crossAxisSpacing = 10.dp,
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                crypto.tags.forEach { tag ->
+                                    CryptoTag(tag = tag)
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(15.dp))
+
+                            Text(
+                                text = "Prediction",
+                                style = MaterialTheme.typography.h3
+                            )
+                            Spacer(modifier = Modifier.height(15.dp))
+                        }
+
                     }
                     /* TODO-FIXME
                     items(crypto.team) { teamMember ->
@@ -143,5 +154,7 @@ fun CryptoDetailScreen(
 @Composable
 @Preview
 fun CryptoDetailScreenPreview() {
-    CryptoDetailScreen(name = "detail_screen")
+    CryptoDetailScreen(
+        name = "detail_screen", viewModel = hiltViewModel()
+    )
 }

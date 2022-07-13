@@ -46,15 +46,16 @@ fun BottomNavGraph(
         composable(
             route = GraphScreen.CryptoDetailScreen.route + "/{arg_name}",
             arguments = listOf(
-                navArgument(Constants.ARG_NAME) {
+                navArgument(Constants.PARAM_CRYPTO_ID) {
                     type = NavType.StringType
-                    defaultValue = "CloudCnctr"
+                    defaultValue = "eth-ethereum"
                     nullable = true
                 }
             )
         ) { entry ->
             CryptoDetailScreen(
-                name = entry.arguments?.getString(Constants.ARG_NAME)
+                // TODO-FIXME name = entry.arguments?.getString(Constants.PARAM_CRYPTO_ID)
+                name = "/{arg_name}"
             )
         }
     }

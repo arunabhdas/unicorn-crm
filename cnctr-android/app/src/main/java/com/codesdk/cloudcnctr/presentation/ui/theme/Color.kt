@@ -27,3 +27,7 @@ val TertiaryColor = Color(0xffF72585)
 var QuadColor = Color(0xff4361ee)
 var PentaColor = Color(0xff552F62)
 var HexaColor = Color(0xff334E70)
+
+val DarkGray = Color(0xFF202020)
+val MediumGray = Color(0xFF505050)
+val DecaColor = Color(0xFF552F62)
