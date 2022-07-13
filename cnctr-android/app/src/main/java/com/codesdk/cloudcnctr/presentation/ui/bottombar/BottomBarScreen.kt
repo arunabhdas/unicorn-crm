@@ -50,7 +50,7 @@ sealed class BottomBarScreen(
         iconId = R.drawable.ic_bubble
     )
 
-    object TabFiveScreen: BottomBarScreen(
+    object CryptoDetailScreen: BottomBarScreen(
         route = "five",
         title = "Five",
         iconId = R.drawable.ic_bubble

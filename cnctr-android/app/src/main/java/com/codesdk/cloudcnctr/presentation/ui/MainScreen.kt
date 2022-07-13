@@ -16,7 +16,7 @@ import com.codesdk.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
  * Created by Das on 2022-07-08.
  */
 @Composable
-fun MainScreen() {
+fun MainScreen(name: String?) {
     val navController = rememberNavController()
     Scaffold(
         bottomBar = {

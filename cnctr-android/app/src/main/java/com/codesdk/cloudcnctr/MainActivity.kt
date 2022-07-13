@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.codesdk.cloudcnctr.presentation.Navigation
 import com.codesdk.cloudcnctr.presentation.ui.theme.CloudCnctrTheme
 import com.codesdk.cloudcnctr.presentation.ui.MainScreen
 import com.codesdk.cloudcnctr.presentation.ui.TabOneScreen
@@ -23,7 +24,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CloudCnctrTheme {
-                MainScreen()
+                // TODO-FIXME MainScreen()
+                Navigation()
             }
         }
     }

@@ -11,4 +11,6 @@ object Constants {
     const val STATUS_ACTIVE = "active"
 
     const val STATUS_INACTIVE = "inactive"
+
+    const val ARG_NAME = "arg_name"
 }

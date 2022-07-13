@@ -29,7 +29,7 @@ import com.codesdk.cloudcnctr.presentation.ui.theme.DeepBlue
  */
 @Composable
 fun CryptoListScreen(
-    // TODO-FIXME navController: NavController,
+    navController: NavController,
     viewModel: CryptoListViewModel = hiltViewModel()
 ) {
     val state = viewModel.state.value
@@ -43,11 +43,9 @@ fun CryptoListScreen(
                 CryptoListItem(
                     crypto = crypto,
                     onItemClick = {
-                        /* TODO-FIXME
                         navController.navigate(
                             Screen.CryptoDetailScreen.route + "/${crypto.id}"
                         )
-                        */
                 })
             }
         }
