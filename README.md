@@ -1,6 +1,7 @@
-# CloudCnctrCRM
-CloudCnctr is a blockchain powered DeFi platform that connects assets in the digital world with assets in the physical world
-Cnctr-Android is a cloud CRM for enterprise business analytics
+# CloudCnctr.AI wallet 
+CloudCnctr.AI is a low-code / no-code platform that allows for the development, testing, and deployment of a full stack (frontend, middleware, backend) application built using Clean architecture Principles.  
+
+CloudCnctr.AI wallet is a blockchain powered DeFi platform that connects assets in the digital world with assets in the physical world
 
 # Clean Architecture Concepts
 
