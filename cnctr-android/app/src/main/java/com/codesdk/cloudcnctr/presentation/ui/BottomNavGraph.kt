@@ -37,10 +37,6 @@ fun BottomNavGraph(
             CryptoListScreen(navController)
         }
 
-        /* TODO-FIXME-x86
-        composable(route = BottomBarScreen.CryptoDetailScreen.route) {
-            CryptoDetailScreen()
-        }
         composable(
             route = Screen.CryptoDetailScreen.route + "/{arg_name}",
             arguments = listOf(
@@ -56,7 +52,6 @@ fun BottomNavGraph(
                 name = "/{arg_name}"
             )
         }
-        */
 
         composable(
             route = Screen.CryptoDetailScreen.route + "/{arg_name}",
