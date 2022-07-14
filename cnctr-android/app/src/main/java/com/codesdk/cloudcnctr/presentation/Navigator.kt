@@ -13,18 +13,18 @@ import com.codesdk.cloudcnctr.presentation.ui.*
  * Created by Das on 2022-07-13.
  */
 @Composable
-fun RootNavGraph() {
+fun Navigator() {
     val navController = rememberNavController()
     NavHost(
         navController = navController,
-        startDestination = GraphScreen.AuthenticationScreen.route
+        startDestination = Screen.AuthenticationScreen.route
     ) {
-        composable(route = GraphScreen.AuthenticationScreen.route) {
+        composable(route = Screen.AuthenticationScreen.route) {
             AuthenticationScreen(navController = navController)
         }
 
         composable(
-            route = GraphScreen.DetailScreen.route + "/{arg_name}",
+            route = Screen.DetailScreen.route + "/{arg_name}",
             arguments = listOf(
                 navArgument(Constants.ARG_NAME) {
                     type = NavType.StringType
@@ -36,7 +36,7 @@ fun RootNavGraph() {
            DetailScreen(name = entry.arguments?.getString(Constants.ARG_NAME))
         }
 
-        composable(route = GraphScreen.MainScreen.route) {
+        composable(route = Screen.MainScreen.route) {
             MainScreen(name = "main_screen", navController = navController)
         }
 

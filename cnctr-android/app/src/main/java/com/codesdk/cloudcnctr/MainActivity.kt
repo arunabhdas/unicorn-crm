@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.codesdk.cloudcnctr.presentation.RootNavGraph
+import com.codesdk.cloudcnctr.presentation.Navigator
 import com.codesdk.cloudcnctr.presentation.ui.theme.CloudCnctrTheme
 import com.codesdk.cloudcnctr.presentation.ui.MainScreen
 import com.codesdk.cloudcnctr.presentation.ui.TabOneScreen
@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             CloudCnctrTheme {
                 // TODO-FIXME MainScreen()
-                RootNavGraph()
+                Navigator()
             }
         }
     }

@@ -22,7 +22,6 @@ import com.codesdk.cloudcnctr.presentation.ui.theme.PrimaryColor
 /**
  * Created by Das on 2022-07-13.
  */
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun AuthenticationScreen(navController: NavController) {
     var text by remember {
@@ -52,7 +51,7 @@ fun AuthenticationScreen(navController: NavController) {
             Button(
                 onClick = {
                     // TODO-FIXME navController.navigate(Screen.DetailScreen.withArgs(text))
-                    navController.navigate(GraphScreen.MainScreen.route)
+                    navController.navigate(Screen.MainScreen.route)
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally)
                     .background(PrimaryColor)

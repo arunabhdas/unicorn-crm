@@ -44,7 +44,7 @@ fun BottomNavGraph(
         }
         */
         composable(
-            route = GraphScreen.CryptoDetailScreen.route + "/{arg_name}",
+            route = Screen.CryptoDetailScreen.route + "/{arg_name}",
             arguments = listOf(
                 navArgument(Constants.PARAM_CRYPTO_ID) {
                     type = NavType.StringType
