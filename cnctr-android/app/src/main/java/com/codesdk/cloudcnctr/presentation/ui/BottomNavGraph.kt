@@ -40,22 +40,6 @@ fun BottomNavGraph(
         composable(
             route = Screen.CryptoDetailScreen.route + "/{arg_name}",
             arguments = listOf(
-                navArgument(Constants.PARAM_CRYPTO_ID) {
-                    type = NavType.StringType
-                    defaultValue = "eth-ethereum"
-                    nullable = true
-                }
-            )
-        ) { entry ->
-            CryptoDetailScreen(
-                // TODO-FIXME name = entry.arguments?.getString(Constants.PARAM_CRYPTO_ID)
-                name = "/{arg_name}"
-            )
-        }
-
-        composable(
-            route = Screen.CryptoDetailScreen.route + "/{arg_name}",
-            arguments = listOf(
                 navArgument("arg_name") {
                     type = NavType.StringType
                     defaultValue = "eth-ethereum"
