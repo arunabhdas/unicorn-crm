@@ -99,11 +99,11 @@ fun GreetingSection(
             verticalArrangement = Arrangement.Center
         ) {
             Text(
-                text = "Cloud Cnctr CRM $name",
+                text = "CloudCnctr.AI  $name",
                 style = MaterialTheme.typography.h2
             )
             Text(
-                text = "One Day Full Stack Design, Development, Deployment ",
+                text = "No-code platform for design, development, deployment and distribution of a cloud first, mobile first application stack",
                 style = MaterialTheme.typography.body1
             )
         }

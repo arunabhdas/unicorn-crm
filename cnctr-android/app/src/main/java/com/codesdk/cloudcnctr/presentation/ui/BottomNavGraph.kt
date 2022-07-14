@@ -29,13 +29,15 @@ fun BottomNavGraph(
             TabTwoScreen()
         }
 
+        composable(route = BottomBarScreen.CryptoListScreen.route) {
+            CryptoListScreen(navController)
+        }
+
         composable(route = BottomBarScreen.TabThreeScreen.route) {
             TabThreeScreen()
         }
 
-        composable(route = BottomBarScreen.CryptoListScreen.route) {
-            CryptoListScreen(navController)
-        }
+
 
         composable(
             route = Screen.CryptoDetailScreen.route + "/{arg_name}",

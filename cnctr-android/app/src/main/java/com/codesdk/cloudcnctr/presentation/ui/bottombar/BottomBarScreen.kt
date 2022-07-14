@@ -33,9 +33,15 @@ sealed class BottomBarScreen(
 
     object TabTwoScreen: BottomBarScreen(
         route = "two",
-        title = "Profile",
-        iconId = R.drawable.ic_profile
+        title = "Portfolio",
+        iconId = R.drawable.ic_bubble
 
+    )
+
+    object CryptoListScreen: BottomBarScreen(
+        route = "four",
+        title = "Explore",
+        iconId = R.drawable.ic_bubble
     )
 
     object TabThreeScreen: BottomBarScreen(
@@ -44,11 +50,6 @@ sealed class BottomBarScreen(
         iconId = R.drawable.ic_bubble
     )
 
-    object CryptoListScreen: BottomBarScreen(
-        route = "four",
-        title = "Assets",
-        iconId = R.drawable.ic_bubble
-    )
 
     object CryptoDetailScreen: BottomBarScreen(
         route = "five",
