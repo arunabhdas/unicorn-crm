@@ -23,6 +23,7 @@ fun Navigator() {
             AuthenticationScreen(navController = navController)
         }
 
+        /* TODO-FIXME-x86
         composable(
             route = Screen.DetailScreen.route + "/{arg_name}",
             arguments = listOf(
@@ -32,9 +33,10 @@ fun Navigator() {
                     nullable = true
                 }
             )
-        ) { entry ->
-           DetailScreen(name = entry.arguments?.getString(Constants.ARG_NAME))
+        ) { backStackEntry ->
+           DetailScreen(name = backStackEntry.arguments?.getString(Constants.ARG_NAME))
         }
+        */
 
         composable(route = Screen.MainScreen.route) {
             MainScreen(name = "main_screen", navController = navController)

@@ -67,9 +67,9 @@ fun BottomNavGraph(
                     nullable = true
                 }
             )
-        ) { entry ->
+        ) { backStackEntry ->
             CryptoDetailScreen(
-                name = entry.arguments?.getString("arg_name")
+                name = backStackEntry.arguments?.getString("arg_name")
             )
         }
     }
