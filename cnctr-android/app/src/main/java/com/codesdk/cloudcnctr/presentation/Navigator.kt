@@ -26,7 +26,7 @@ fun Navigator() {
         composable(
             route = Screen.DetailScreen.route + "/{arg_name}",
             arguments = listOf(
-                navArgument(Constants.ARG_NAME) {
+                navArgument("arg_name") {
                     type = NavType.StringType
                     defaultValue = "CloudCnctr"
                     nullable = true

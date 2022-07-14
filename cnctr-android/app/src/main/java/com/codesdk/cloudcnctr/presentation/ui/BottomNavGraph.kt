@@ -38,11 +38,10 @@ fun BottomNavGraph(
             CryptoListScreen(navController)
         }
 
-        /* TODO-FIXME
+        /* TODO-FIXME-x86
         composable(route = BottomBarScreen.CryptoDetailScreen.route) {
             CryptoDetailScreen()
         }
-        */
         composable(
             route = Screen.CryptoDetailScreen.route + "/{arg_name}",
             arguments = listOf(
@@ -56,6 +55,22 @@ fun BottomNavGraph(
             CryptoDetailScreen(
                 // TODO-FIXME name = entry.arguments?.getString(Constants.PARAM_CRYPTO_ID)
                 name = "/{arg_name}"
+            )
+        }
+        */
+
+        composable(
+            route = Screen.CryptoDetailScreen.route + "/{arg_name}",
+            arguments = listOf(
+                navArgument("arg_name") {
+                    type = NavType.StringType
+                    defaultValue = "eth-ethereum"
+                    nullable = true
+                }
+            )
+        ) { entry ->
+            CryptoDetailScreen(
+                name = entry.arguments?.getString("arg_name")
             )
         }
     }

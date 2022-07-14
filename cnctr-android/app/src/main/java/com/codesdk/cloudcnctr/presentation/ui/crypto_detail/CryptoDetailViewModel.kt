@@ -30,7 +30,7 @@ class CryptoDetailViewModel @Inject constructor(
 
     init {
         android.util.Log.d("TODO-FIXME", "CryptoDetailViewModel init")
-        savedStateHandle.get<String>(Constants.PARAM_CRYPTO_ID)?.let {coinId ->
+        savedStateHandle.get<String>("arg_name")?.let {coinId ->
             android.util.Log.d("TODO-FIXME", "CryptoDetailViewModel init-" + coinId)
             getCrypto(coinId)
         }
