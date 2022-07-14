@@ -13,7 +13,6 @@ import com.codesdk.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
 /**
  * Created by Das on 2022-07-08.
  */
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun BottomNavGraph(
     navController: NavHostController

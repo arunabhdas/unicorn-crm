@@ -39,9 +39,6 @@ fun CryptoDetailScreen(
     viewModel: CryptoDetailViewModel = hiltViewModel()
 ) {
     val state = viewModel.state.value
-    android.util.Log.d("TODO-FIXME", state.toString())
-    android.util.Log.d("TODO-FIXME", "--CryptoDetailsScreen--name--" + name)
-    android.util.Log.d("TODO-FIXME", "--CryptoDetailScreen--")
     Box(
         modifier = Modifier
             .fillMaxSize()
