@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/java/com/codesdk/cloudcnctr/presentation/ui/AuthenticationScreen.kt" value="0.335" />
+        <entry key="app/src/main/java/com/codesdk/cloudcnctr/presentation/ui/LandingScreen.kt" value="0.2388888888888889" />
         <entry key="app/src/main/java/com/codesdk/cloudcnctr/presentation/ui/TabOneScreen.kt" value="0.16917293233082706" />
         <entry key="app/src/main/java/com/codesdk/cloudcnctr/presentation/ui/TabThreeScreen.kt" value="0.33544303797468356" />
         <entry key="app/src/main/java/com/codesdk/cloudcnctr/presentation/ui/TabTwoScreen.kt" value="0.30363175675675674" />

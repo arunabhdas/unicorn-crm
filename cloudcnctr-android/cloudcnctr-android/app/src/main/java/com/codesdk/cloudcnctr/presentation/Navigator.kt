@@ -20,7 +20,7 @@ fun Navigator() {
         startDestination = Screen.AuthenticationScreen.route
     ) {
         composable(route = Screen.AuthenticationScreen.route) {
-            AuthenticationScreen(navController = navController)
+            LandingScreen(navController = navController)
         }
 
         /* TODO-FIXME-x86
