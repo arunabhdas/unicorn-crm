@@ -5,9 +5,7 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.GridCells
 import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.LazyVerticalGrid
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
@@ -29,6 +27,8 @@ import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.Feature
 import ai.cloudcnctr.cloudcnctr.R
 import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.*
 import ai.cloudcnctr.cloudcnctr.standardQuadFromTo
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 
 /**
  * Created by Das on 2022-07-08.
@@ -198,7 +198,7 @@ fun FeatureSection(features: List<Feature>) {
             modifier = Modifier.padding(15.dp)
         )
         LazyVerticalGrid(
-            cells = GridCells.Fixed(2),
+            columns = GridCells.Fixed(2),
             contentPadding = PaddingValues(start = 7.5.dp, end = 7.5.dp, bottom = 100.dp),
             modifier = Modifier.fillMaxHeight()
         ) {
