@@ -7,17 +7,20 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navArgument
 import ai.cloudcnctr.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
+import androidx.compose.ui.Modifier
 
 /**
  * Created by Das on 2022-07-08.
  */
 @Composable
 fun BottomNavGraph(
-    navController: NavHostController
+    navController: NavHostController,
+    modifier: Modifier = Modifier
 ) {
     NavHost(
         navController = navController,
-        startDestination = BottomBarScreen.TabOneScreen.route
+        startDestination = BottomBarScreen.TabOneScreen.route,
+        modifier = modifier
     ) {
         composable(route = BottomBarScreen.TabOneScreen.route) {
             TabOneScreen()

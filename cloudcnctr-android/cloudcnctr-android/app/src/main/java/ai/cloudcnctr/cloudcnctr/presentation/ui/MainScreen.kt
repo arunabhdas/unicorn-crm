@@ -1,7 +1,6 @@
 package ai.cloudcnctr.cloudcnctr.presentation.ui
 
 import androidx.compose.foundation.layout.RowScope
-import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.painterResource
@@ -11,10 +10,17 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import ai.cloudcnctr.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.BottomNavigation
+import androidx.compose.material.BottomNavigationItem
+import androidx.compose.material.ContentAlpha
+import androidx.compose.material.Icon
+import androidx.compose.material.LocalContentColor
+import androidx.compose.material.Scaffold
+import androidx.compose.material.Text
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 
-/**
- * Created by Das on 2022-07-08.
- */
 
 @Composable
 fun MainScreen(
@@ -22,13 +28,18 @@ fun MainScreen(
     navController: NavHostController
 ) {
     val navController = rememberNavController()
+    val contentPadding = 16.dp
     Scaffold(
         bottomBar = {
             BottomBar(navController = navController)
+        },
+        content = { innerPadding ->
+            BottomNavGraph(
+                navController = navController,
+                modifier = Modifier.padding(contentPadding)
+            )
         }
-    ) {
-        BottomNavGraph(navController = navController)
-    }
+    )
 }
 
 @Composable
