@@ -75,5 +75,5 @@ fun CryptoListScreen(
 @Composable
 @Preview
 fun CryptoListScreenPreview() {
-    // TODO-FIXME-x86 CryptoListScreen()
+    CryptoListScreen()
 }
