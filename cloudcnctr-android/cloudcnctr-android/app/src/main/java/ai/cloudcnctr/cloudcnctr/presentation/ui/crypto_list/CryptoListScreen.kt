@@ -24,6 +24,7 @@ import androidx.navigation.NavController
 import ai.cloudcnctr.cloudcnctr.presentation.ui.crypto_list.components.CryptoListViewModel
 import ai.cloudcnctr.cloudcnctr.presentation.ui.crypto_list.components.CryptoListItem
 import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.DeepBlue
+import androidx.navigation.compose.rememberNavController
 
 /**
  * Created by Das on 2022-07-11.
@@ -75,5 +76,8 @@ fun CryptoListScreen(
 @Composable
 @Preview
 fun CryptoListScreenPreview() {
-    CryptoListScreen()
+    CryptoListScreen(
+        navController = rememberNavController(),
+        viewModel = hiltViewModel()
+    )
 }
