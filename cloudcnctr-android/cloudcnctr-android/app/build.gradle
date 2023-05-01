@@ -33,7 +33,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-        useIR = true
+        // TODO-FIXME-DEPRECATED useIR = true
     }
     buildFeatures {
         compose true
@@ -42,6 +42,7 @@ android {
         kotlinCompilerExtensionVersion compose_version
         kotlinCompilerVersion '1.5.21'
     }
+    namespace 'ai.cloudcnctr.cloudcnctr'
 }
 
 dependencies {
