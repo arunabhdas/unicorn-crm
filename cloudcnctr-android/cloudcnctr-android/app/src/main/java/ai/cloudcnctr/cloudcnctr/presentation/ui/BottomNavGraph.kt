@@ -5,9 +5,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.navArgument
 import ai.cloudcnctr.cloudcnctr.presentation.ui.bottombar.BottomBarScreen
 import androidx.compose.ui.Modifier
+import androidx.navigation.navArgument
 
 /**
  * Created by Das on 2022-07-08.
