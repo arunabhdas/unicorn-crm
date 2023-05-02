@@ -1,5 +1,5 @@
 #  Unicorn CRM
-Unicorn CRM is a low-code / no-code platform that allows for the development, testing, and deployment of a full stack (frontend, middleware, backend) application built using Clean architecture Principles.  
+Unicorn CRM is a ChatUX platform that allows for the development, testing, and deployment of a full stack (frontend, middleware, backend) application built using Clean architecture Principles.  
 
 Unicorn CRM is powered DeFi CRM platform that connects assets in the digital world with assets in the physical world
 
