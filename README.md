@@ -25,4 +25,3 @@ https://api.coinpaprika.com/v1/coins/btc-bitcoin
 ![Screenshot 5a](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_5a.png)
 ![Screenshot 3d](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_3d.png)
 ![Screenshot 4](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_4a.png)
-![Screenshot 3](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_3a.png)
