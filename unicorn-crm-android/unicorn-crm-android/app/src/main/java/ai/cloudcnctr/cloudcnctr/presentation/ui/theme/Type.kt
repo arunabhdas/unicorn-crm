@@ -18,12 +18,18 @@ val gothicA1 = FontFamily(
     )
 )
 
+val bebasNeueFamily = FontFamily(
+    Font(R.font.bebas_neue_thin, FontWeight.Thin),
+    Font(R.font.bebas_neue_regular, FontWeight.Normal),
+    Font(R.font.bebas_neue_bold, FontWeight.Bold)
+)
+
 // Set of Material typography styles to start with
 val Typography = Typography(
     body1 = TextStyle(
         color = AquaBlue,
         fontFamily = gothicA1,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.Medium,
         fontSize = 14.sp
     ),
     h1 = TextStyle(
