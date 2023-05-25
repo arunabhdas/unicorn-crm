@@ -45,7 +45,7 @@ fun CryptoListScreen(
                 CryptoListItem(
                     crypto = crypto,
                     onItemClick = {
-                        android.util.Log.d("TODO-FIXME", "CryptoListScreen-onItemClick----------/${crypto.id}")
+                        android.util.Log.d("TODO-FIXME", "CryptoListScreen-onItemClick----------/${crypto.id} ${crypto.rank}")
                         navController.navigate(
                             Screen.CryptoDetailScreen.route + "/${crypto.id}"
                         )

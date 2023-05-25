@@ -14,6 +14,8 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.DeepBlue
 import ai.cloudcnctr.cloudcnctr.presentation.ui.theme.PrimaryColor
+import androidx.compose.material.MaterialTheme
+import androidx.compose.ui.graphics.Color
 
 /**
  * Created by Das on 2022-07-13.
@@ -35,6 +37,12 @@ fun LandingScreen(navController: NavController) {
                 .fillMaxWidth()
                 .padding(horizontal = 50.dp)
         ) {
+            Text(
+                text = "Unicorn CRM",
+                color = Color.White,
+                style = MaterialTheme.typography.h3
+            )
+            /* TODO-FIXME-CLEANUP
             TextField(
                 value = text,
                 onValueChange = {
@@ -42,6 +50,7 @@ fun LandingScreen(navController: NavController) {
                 },
                 modifier = Modifier.fillMaxWidth()
             )
+            */
             Spacer(modifier = Modifier.height(8.dp))
 
             Button(

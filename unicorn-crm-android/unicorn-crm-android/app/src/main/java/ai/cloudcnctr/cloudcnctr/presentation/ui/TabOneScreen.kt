@@ -99,11 +99,13 @@ fun GreetingSection(
             verticalArrangement = Arrangement.Center
         ) {
             Text(
-                text = "CloudCnctr.AI  $name",
+                text = "Unicorn CRM  $name",
+                color = Color.White,
                 style = MaterialTheme.typography.h2
             )
             Text(
-                text = "No-code platform for design, development, deployment and distribution of a cloud first, mobile first application stack",
+                text = "CRM for design, development, deployment and distribution of an AI-first application stack",
+                color = Color.White,
                 style = MaterialTheme.typography.body1
             )
         }
