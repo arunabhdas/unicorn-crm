@@ -18,6 +18,10 @@ https://api.coinpaprika.com/v1/coins
 
 https://api.coinpaprika.com/v1/coins/btc-bitcoin
 
+### Android Studio version
+Project compiles with Android Studio Meerkat | 2024.3.1 Beta 1 
+![Android Studio Meerkat](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/android_studio_meerkat_version_1.png?raw=true)
+
 ### Screenshots
 
 ![Screenshot 0](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/screenshot_2_0.png)
