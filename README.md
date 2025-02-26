@@ -19,13 +19,13 @@ https://api.coinpaprika.com/v1/coins
 https://api.coinpaprika.com/v1/coins/btc-bitcoin
 
 ### Android Studio version
-Project compiles with Android Studio Meerkat | 2024.3.1 Beta 1 
+Project compiles with Android Studio Meerkat | 2024.3.1 Beta 1  and Gradle 8.2.2
 ![Android Studio Meerkat](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/android_studio_meerkat_version_1.png?raw=true)
 
 ### Screenshots
 
-![Screenshot 0](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/screenshot_2_0.png)
-![Screenshot 1](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/screenshot_2_1.png)
-![Screenshot 5a](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_5a.png)
-![Screenshot 3d](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_3d.png)
-![Screenshot 4](https://github.com/arunabhdas/cnctr-android/blob/main/screenshots/screenshot_4a.png)
+![Screenshot 1](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/screenshot_25_feb_2025_1.png?raw=true)
+![Screenshot 2](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/screenshot_25_feb_2025_2.png?raw=true)
+![Screenshot 3](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/screenshot_25_feb_2025_3.png?raw=true)
+![Screenshot 4](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/screenshot_25_feb_2025_4.png?raw=true)
+![Screenshot 5](https://github.com/arunabhdas/unicorn-crm/blob/main/screenshots/screenshot_25_feb_2025_5.png?raw=true)
